@@ -1,0 +1,139 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial;
+background:#f3f5fa;
+}
+
+/* LOGIN */
+
+.login{
+width:90%;
+max-width:400px;
+margin:100px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 3px 12px #d5d9e5;
+text-align:center;
+}
+
+.login h1{
+color:#3f51b5;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:7px;
+}
+
+button{
+padding:10px 16px;
+background:#3f51b5;
+color:white;
+border:0;
+border-radius:7px;
+cursor:pointer;
+}
+
+.login button{
+width:100%;
+margin-top:10px;
+}
+
+#error{
+color:red;
+}
+
+/* DASHBOARD */
+
+.page{
+display:none;
+width:90%;
+max-width:1000px;
+margin:30px auto;
+}
+
+header{
+background:#3f51b5;
+color:white;
+padding:20px;
+border-radius:12px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+margin:0;
+}
+
+header p{
+margin:6px 0 0;
+}
+
+header button{
+background:white;
+color:#3f51b5;
+}
+
+#search{
+width:100%;
+margin:20px 0;
+}
+
+/* COMPLAINT */
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 8px #ddd;
+}
+
+.card h3{
+color:#3f51b5;
+margin-top:0;
+}
+
+.card p{
+line-height:1.6;
+}
+
+.card select{
+padding:9px;
+margin:5px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.update{
+margin-top:10px;
+}
+
+/* SUCCESS */
+
+.success{
+display:none;
+color:green;
+text-align:center;
+font-weight:bold;
+margin-top:10px;
+}
+
+/* WARNING */
+
+.warning{
+display:none;
+color:red;
+text-align:center;
+font-weight:bold;
+margin-top:10px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Complaint</title>
+<link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+<div class="page">
+
+<header>
+<h1>Student Complaint</h1>
+<button id="myTickets">My Tickets</button>
+</header>
+
+<div class="box">
+
+<h2>Submit Complaint</h2>
+
+<label>Student ID <span>*</span></label>
+<input id="studentId" placeholder="Enter Student ID">
+
+<label>Problem <span>*</span></label>
+<select id="problem">
+<option value="">Select Problem</option>
+<option>Wi-Fi</option>
+<option>Internet</option>
+<option>Lab Computer</option>
+<option>Software</option>
+<option>Projector</option>
+<option>Printer</option>
+<option>Login/Account</option>
+<option>ERP</option>
+<option>Other</option>
+</select>
+
+<input id="otherProblem" placeholder="Enter other problem">
+
+<label>Location <span>*</span></label>
+<select id="locationBox">
+<option value="">Select Location</option>
+<option>Computer Lab</option>
+<option>Classroom</option>
+<option>Library</option>
+<option>Seminar Hall</option>
+<option>Office</option>
+<option>Computer Centre</option>
+<option>Hostel</option>
+<option>Other</option>
+</select>
+
+<input id="otherLocation" placeholder="Enter other location">
+
+<label>Description <span>*</span></label>
+<textarea id="description" placeholder="Describe your problem"></textarea>
+
+<button id="submit">Submit Complaint</button>
+
+<p id="successMessage"></p>
+
+</div>
+</div>
+
+<div id="popup" class="popup">
+<div class="popupBox">
+
+<button id="close">✕</button>
+
+<h2>My Tickets</h2>
+
+<input id="searchId" placeholder="Enter Student ID">
+<button id="view">View Tickets</button>
+
+<div id="tickets"></div>
+
+</div>
+</div>
+
+<script src="student.js"></script>
+</body>
+</html>

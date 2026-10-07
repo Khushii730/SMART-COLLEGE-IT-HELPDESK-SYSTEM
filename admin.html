@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div id="loginBox" class="login">
+
+<h1>Admin Login</h1>
+<p>Smart College IT Helpdesk</p>
+
+<input id="username" placeholder="Username">
+
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p id="error"></p>
+
+</div>
+
+
+<div id="dashboard" class="page">
+
+<header>
+
+<div>
+<h1>Admin Dashboard</h1>
+<p>Smart College IT Helpdesk</p>
+</div>
+
+<button onclick="logout()">Logout</button>
+
+</header>
+
+
+<div class="stats">
+
+<button class="stat" onclick="showComplaints('All')">
+<h2 id="total">0</h2>
+<p>All Complaints</p>
+</button>
+
+<button class="stat" onclick="showComplaints('Pending')">
+<h2 id="pending">0</h2>
+<p>Pending</p>
+</button>
+
+<button class="stat" onclick="showComplaints('In Progress')">
+<h2 id="progress">0</h2>
+<p>In Progress</p>
+</button>
+
+<button class="stat" onclick="showComplaints('Resolved')">
+<h2 id="resolved">0</h2>
+<p>Resolved</p>
+</button>
+
+<button class="stat" onclick="showComplaints('Unresolved')">
+<h2 id="unresolved">0</h2>
+<p>Unresolved</p>
+</button>
+
+</div>
+
+
+<div class="section">
+
+<h2 id="complaintTitle">All Complaints</h2>
+
+<input id="search"
+placeholder="Search Ticket ID / Student ID / Problem / Location">
+
+<div id="list"></div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Team Performance</h2>
+
+<p>Network Team: <b id="network">0</b></p>
+
+<p>Hardware Team: <b id="hardware">0</b></p>
+
+<p>Software Team: <b id="software">0</b></p>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

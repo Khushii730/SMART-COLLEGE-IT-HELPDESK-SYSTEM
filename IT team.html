@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IT Team</title>
+<link rel="stylesheet" href="IT Team.css">
+</head>
+
+<body>
+
+<div id="loginBox" class="login">
+
+<h1>IT Team Login</h1>
+<p>Smart College IT Helpdesk</p>
+
+<input id="username" placeholder="Username">
+
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p id="error"></p>
+
+</div>
+
+
+<div id="dashboard" class="page">
+
+<header>
+
+<div>
+<h1>IT Team Dashboard</h1>
+<p>Smart College IT Helpdesk</p>
+</div>
+
+<button onclick="logout()">Logout</button>
+
+</header>
+
+<input id="search"
+placeholder="Search Ticket ID / Student ID / Problem / Location">
+
+<div id="list"></div>
+
+</div>
+
+<script src="IT Team.js"></script>
+
+</body>
+</html>
